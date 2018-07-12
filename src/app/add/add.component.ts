@@ -11,7 +11,7 @@ export class AddComponent implements OnInit {
   country: string;
   gender: string;
  // employeeArray: Array<IEmployee> = new Array<IEmployee>();
-  employeeArray: EmployeeInterface[] = [{"name": "Anuj", "country": "India", "gender": "male"}];
+  employeeArray: EmployeeInterface[] = [];
   
   ngOnInit() {
     const details = localStorage.getItem('employeeDetails');

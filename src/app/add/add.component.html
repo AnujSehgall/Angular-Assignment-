@@ -1,11 +1,11 @@
-<div class="box">
+<div class="box" id="form">
 
   <p>
     Name &nbsp; &nbsp;&nbsp;:&nbsp;
-    <input type="text" [(ngModel)]="name">
+    <input type="text" [(ngModel)]="name" required>
     <br>
-    <br> Country :&nbsp;
-    <input type="text" [(ngModel)]="country">
+    <br> Address :&nbsp;
+    <input type="text" [(ngModel)]="country" required>
     <br>
     <br> Gender&nbsp;&nbsp;&nbsp;:&nbsp;MALE
     <input type="radio" value="male" [checked]="gender===male" [(ngModel)]="gender" name="selector"> FEMALE
@@ -14,7 +14,9 @@
     <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   </p>
 </div>
-<div>
-  <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <input type="button" value="submit" (click)="add()">
+
+
+<div class="submit">
+    <a [routerLink]="['show-emp']" class="button" (click)="add()">Submit</a>
 </div>
+<router-outlet></router-outlet>
