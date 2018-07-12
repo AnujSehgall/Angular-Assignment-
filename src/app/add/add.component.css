@@ -1,0 +1,14 @@
+.box {
+    width: 25%;
+    bottom: 50%;
+    margin: 0 auto;
+    background: rgba(87, 180, 235, 0.26);
+    padding: 35px;
+    border: 2px solid rgb(58, 97, 202);
+    border-radius: 20px/50px;
+    background-clip: padding-box;
+    text-align: center;
+    position: absolute;
+    bottom: 50%;
+    left: 3%;
+}

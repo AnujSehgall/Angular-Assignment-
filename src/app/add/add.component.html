@@ -1,0 +1,20 @@
+<div class="box">
+
+  <p>
+    Name &nbsp; &nbsp;&nbsp;:&nbsp;
+    <input type="text" [(ngModel)]="name">
+    <br>
+    <br> Country :&nbsp;
+    <input type="text" [(ngModel)]="country">
+    <br>
+    <br> Gender&nbsp;&nbsp;&nbsp;:&nbsp;MALE
+    <input type="radio" value="male" [checked]="gender===male" [(ngModel)]="gender" name="selector"> FEMALE
+    <input type="radio" value="female" [checked]="gender===female" [(ngModel)]="gender" name="selector">
+    <br>
+    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </p>
+</div>
+<div>
+  <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="button" value="submit" (click)="add()">
+</div>
